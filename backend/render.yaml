@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: two-way-auth-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: JWT_SECRET
+        value: __SET_YOUR_SECRET_ON_RENDER__
